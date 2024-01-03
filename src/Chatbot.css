@@ -1,0 +1,126 @@
+.chatbox-button.hide {
+  display: none;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.chatbox-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: purple;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2; /* Make sure the chatbox icon is above the chatbox */
+}
+
+.chatbox {
+  height: 54%;
+  position: fixed;
+  bottom: 8.5%;
+  right: 20px;
+  width: 38%;
+  max-width: 400px;
+  background-color: plum;
+  /* border-radius: 5px; */
+  /* padding: 10px; */
+  overflow-y: auto; /* Add scrolling */
+  z-index: 1; /* Make sure the chatbox is below the icon */
+}
+
+.chatbox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+.chatbox li {
+  margin-bottom: 10px;
+  background-color: purple;
+  padding: 5px;
+  color: white;
+  border-radius: 20px;
+  width:fit-content;
+
+
+}
+
+.chatbox li.user {
+  text-align: right;
+  margin-left: auto; 
+  background-color: #d214e3;
+  width:fit-content;
+}
+
+.close-button {
+  position: fixed;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
+  bottom: 62.5%;
+  width:38.2%;
+  max-width: 400px; /* Set a maximum width for the input container */
+  margin: 0 auto; /* Center the input container */
+  display: flex;
+  align-items: center;
+  padding: 10px; 
+  z-index: 2; /* Set a higher z-index value */
+  background-color: plum;
+  border: 0;
+  border-radius:20px 20px 0 0;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 0px;
+  width: 35.6%;
+  max-width: 381px; /* Set a maximum width for the input container */
+  margin: 0 auto; /* Center the input container */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  z-index: 2; /* Set a higher z-index value */
+  background-color: plum;
+border-radius: 0 0 20px 20px; 
+margin-bottom: 1%; 
+}
+
+
+
+.input {
+  flex: 1;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.btn_sub {
+  width: 10%;
+  font-size: larger;
+  color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  background-color:plum ;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .chatbox {
+    height: 70%; /* Adjust the height accordingly */
+    width: 70%; /* Adjust the width accordingly */
+  }
+
+  .close-button{
+    width: 70%;
+    margin-bottom: 12.2%;
+  }
+  .input-container {
+    width: 70%; /* Adjust the width accordingly */
+  }
+}
