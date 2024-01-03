@@ -16,7 +16,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 2; /* Make sure the chatbox icon is above the chatbox */
+  z-index: 2; 
 }
 
 .chatbox {
@@ -29,8 +29,8 @@
   background-color: plum;
   /* border-radius: 5px; */
   /* padding: 10px; */
-  overflow-y: auto; /* Add scrolling */
-  z-index: 1; /* Make sure the chatbox is below the icon */
+  overflow-y: auto; 
+  z-index: 1; 
 }
 
 .chatbox ul {
@@ -45,7 +45,7 @@
   background-color: purple;
   padding: 5px;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   width:fit-content;
 
 
@@ -65,12 +65,12 @@
   margin: 0;
   bottom: 62.5%;
   width:38.2%;
-  max-width: 400px; /* Set a maximum width for the input container */
-  margin: 0 auto; /* Center the input container */
+  max-width: 400px; 
+  margin: 0 auto; 
   display: flex;
   align-items: center;
   padding: 10px; 
-  z-index: 2; /* Set a higher z-index value */
+  z-index: 2; 
   background-color: plum;
   border: 0;
   border-radius:20px 20px 0 0;
@@ -80,12 +80,12 @@
   position: fixed;
   bottom: 0px;
   width: 35.6%;
-  max-width: 381px; /* Set a maximum width for the input container */
-  margin: 0 auto; /* Center the input container */
+  max-width: 381px; 
+  margin: 0 auto; 
   display: flex;
   align-items: center;
   padding: 10px;
-  z-index: 2; /* Set a higher z-index value */
+  z-index: 2; 
   background-color: plum;
 border-radius: 0 0 20px 20px; 
 margin-bottom: 1%; 
@@ -112,8 +112,8 @@ margin-bottom: 1%;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
   .chatbox {
-    height: 70%; /* Adjust the height accordingly */
-    width: 70%; /* Adjust the width accordingly */
+    height: 70%; 
+    width: 70%; 
   }
 
   .close-button{
@@ -121,6 +121,6 @@ margin-bottom: 1%;
     margin-bottom: 12.2%;
   }
   .input-container {
-    width: 70%; /* Adjust the width accordingly */
+    width: 70%; 
   }
 }
